@@ -72,7 +72,7 @@ func sFrom(r, rMin, nMin float64) float64 {
 	if y >= 1 {
 		return math.Inf(1)
 	}
-	return nMin
+	return (nMin + y) / (1 - y)
 }
 
 func Payback(nStages, costPerStage, savings float64) float64 {

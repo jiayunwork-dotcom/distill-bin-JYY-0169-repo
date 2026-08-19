@@ -95,7 +95,7 @@ func (s Shortcut) GillilandStages(r, rMin, nMin float64) float64 {
 	if y >= 1 {
 		return math.Inf(1)
 	}
-	return nMin
+	return (nMin + y) / (1 - y)
 }
 
 func (s Shortcut) RefluxRatioFromGilliland(nStages, nMin, rMin float64) float64 {
